@@ -3,6 +3,8 @@
 ## General
 
 * Do not use [protocol-relative URLs](https://www.paulirish.com/2010/the-protocol-relative-url/), e.g. `//example.com`.
+* Add `rel="noopener"` when using `target="_blank"` to [improve performance](https://jakearchibald.com/2016/performance-benefits-of-rel-noopener/) and [prevent security vulnerabilities](https://mathiasbynens.github.io/rel-noopener/).
+* Prefer `defer` over `async` when [loading scripts](http://calendar.perfplanet.com/2016/prefer-defer-over-async/).
 
 ## Formatting
 
