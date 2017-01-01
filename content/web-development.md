@@ -4,6 +4,10 @@
 
  - Use [HTTPS everywhere](https://https.cio.gov/).
 
+## User Experience
+
+ - Avoid [low-contrast font colors](http://contrastrebellion.com/).
+
 ## Performance
 
 ### Tools
