@@ -10,12 +10,19 @@
 ## User Experience
 
  - Avoid [low-contrast font colors](http://contrastrebellion.com/).
- - Test your website with [UX Check](http://www.uxcheck.co/).
+ - Consider adding [accesskeys](https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes/accesskey).
+   - [Examples](http://www.hanselman.com/blog/TheWebIsTheNewTerminalAreYouUsingTheWebsKeyboardShortcutsAndHotkeys.aspx)
+
+### Tools
+
+ - [UX Check](http://www.uxcheck.co/)
+ - [FormLinter](https://formlinter.com/) - find usability issues in forms.
 
 ## Performance
 
  - Enable [gzip compression](https://developers.google.com/speed/docs/insights/EnableCompression).
    - [Test gzip compression](http://www.whatsmyip.org/http-compression-test/).
+ - Consider avoiding [web fonts](https://meowni.ca/posts/web-fonts/).
 
 ### Tools
 
@@ -26,3 +33,4 @@
  - [WebPageTest](http://www.webpagetest.org/)
  - [REDbot](https://redbot.org/)
  - [Pingdom](https://tools.pingdom.com/)
+ - [SpeedTracker](https://speedtracker.org/)
