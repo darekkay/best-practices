@@ -8,3 +8,5 @@
 ## Node.js
 
 - [Avoid](https://gist.github.com/branneman/8048520) `require('../../../..')` imports.
+- [Organize your files around features, not roles](https://blog.risingstack.com/node-hero-node-js-project-structure-tutorial/#rule1organizeyourfilesaroundfeaturesnotroles).
+- [Place your test files next to the implementation](https://blog.risingstack.com/node-hero-node-js-project-structure-tutorial/#rule3placeyourtestfilesnexttotheimplementation).
