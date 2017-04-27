@@ -35,10 +35,14 @@
  - [Pingdom](https://tools.pingdom.com/)
  - [SpeedTracker](https://speedtracker.org/)
 
+
  ## Accessibility
 
  - Don't use `tabindex` value [greater than 0](http://webaim.org/techniques/keyboard/tabindex).
  - Be aware of [screen reader conflicts](http://john.foliot.ca/using-accesskeys-is-it-worth-it/) with [accesskeys](http://webaim.org/techniques/keyboard/accesskey), making accesskeys mostly [useless](https://www.thesitewizard.com/webdesign/access-keys-are-useless.shtml) for blind users.
+ - The contrast between the background and the foreground should be as high as possible.
+ - When using colors to communicate an information (such as states or graphs), use different styles or add a text/icon to distinguish different states. This is important for both colorblind people and printing a page in grayscale.
+ - Make sure zooming in/out doesn't break the page.
 
  ### Tools
 
