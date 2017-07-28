@@ -21,3 +21,6 @@ html {
 ## Formatting
 
 - Place [media queries](http://codeguide.co/#css-media-queries) close to their relevant rule sets. Do not bundle them in a separate stylesheet or at the end of the document.
+- Provide a print layout
+  - [Gutenberg framework](https://github.com/BafS/Gutenberg)
+  - Emulate print media in [Chrome](http://stackoverflow.com/a/29962072/1116549)

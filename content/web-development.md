@@ -35,8 +35,7 @@
  - [Pingdom](https://tools.pingdom.com/)
  - [SpeedTracker](https://speedtracker.org/)
 
-
- ## Accessibility
+## Accessibility
 
  - Don't use `tabindex` value [greater than 0](http://webaim.org/techniques/keyboard/tabindex).
  - Be aware of [screen reader conflicts](http://john.foliot.ca/using-accesskeys-is-it-worth-it/) with [accesskeys](http://webaim.org/techniques/keyboard/accesskey), making accesskeys mostly [useless](https://www.thesitewizard.com/webdesign/access-keys-are-useless.shtml) for blind users.
@@ -52,3 +51,10 @@
  - [Functional Accessibility Evaluator 2.0](https://fae.disability.illinois.edu) (Web and [Firefox Addon](https://addons.mozilla.org/en-US/firefox/addon/ainspector-sidebar/))
  - [WAVE Evaluation Tool](https://chrome.google.com/webstore/detail/wave-evaluation-tool/jbbplnpkjmmeebjpijfedlgcdilocofh) (Chrome Addon)
 
+## SEO
+
+ - Use [canonical URLs](https://support.google.com/webmasters/answer/139066?hl=en) to prevent search engines from indexing duplicate content.
+
+### Tools
+
+ - [Siteliner](http://www.siteliner.com/)
