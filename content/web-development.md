@@ -5,7 +5,7 @@
  - Use [HTTPS everywhere](https://https.cio.gov/).
    - Test SSL rating on [SSL Labs](https://www.ssllabs.com/ssltest/).
  - Consider using [inline SVG instead of icon fonts](https://css-tricks.com/icon-fonts-vs-svg/).
-
+   - Summary of GitHub [switching to inline SVGs](https://github.com/blog/2112-delivering-octicons-with-svg)
 
 ## User Experience
 
