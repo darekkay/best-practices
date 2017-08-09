@@ -6,7 +6,7 @@
 - Don't use [@import](http://www.stevesouders.com/blog/2009/04/09/dont-use-import/).
 - Avoid [shorthand properties](http://csswizardry.com/2016/12/css-shorthand-syntax-considered-an-anti-pattern/).
 - Avoid specifying units for zero values, e.g., `margin: 0;` instead of `margin: 0px;`.
-- Use [box-sizing](https://css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice/) by default:
+- Use [box-sizing](https://www.paulirish.com/2012/box-sizing-border-box-ftw/) by default:
 
 ```
 html {
