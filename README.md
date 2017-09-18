@@ -7,6 +7,7 @@ A guide for building better applications.
 - [CSS](content/css.md)
 - [JavaScript](content/javascript.md)
 - [ReactJS](content/react.md)
+- [Application Design](content/application-design.md)
 
 Don't follow this guide blindly. Read the references to learn more about certain rules. Some practices become outdated as the web evolves.
 
