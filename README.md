@@ -3,6 +3,10 @@
 A guide for building better applications.
 
 - [Web Development](content/web-development.md)
+    - [General](content/web-development.md#general)
+    - [Performance](content/web-development.md#performance)
+    - [Accessibility](content/web-development.md#accessibility)
+    - [SEO](content/web-development.md#seo)
 - [HTML](content/html.md)
 - [CSS](content/css.md)
 - [JavaScript](content/javascript.md)
