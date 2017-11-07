@@ -11,7 +11,12 @@ A guide for building better applications.
 - [CSS](content/css.md)
 - [JavaScript](content/javascript.md)
 - [ReactJS](content/react.md)
-- [Application Design](content/application-design.md)
+- [Application design](content/application-design.md)
+- [Work methods](content/work-methods.md)
+    - [Agile/Scrum](content/work-methods.md#agile--scrum)
+    - [Remote work](content/work-methods.md#remote-work)
+    - [Time management](content/work-methods.md#time-management)
+- [Presentation](content/presentation.md)
 
 Don't follow this guide blindly. Read the references to learn more about certain rules. Some practices become outdated as the web evolves.
 

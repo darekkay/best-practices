@@ -1,4 +1,4 @@
-# Application Design - Best Practices
+# Application design - Best Practices
 
 - Provide a way to try the app without signing up
   - Public demo
