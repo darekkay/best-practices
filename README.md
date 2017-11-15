@@ -2,22 +2,202 @@
 
 A guide for building better applications.
 
-- [Web Development](content/web-development.md)
-    - [General](content/web-development.md#general)
-    - [Performance](content/web-development.md#performance)
-    - [Accessibility](content/web-development.md#accessibility)
-    - [SEO](content/web-development.md#seo)
-- [HTML](content/html.md)
-- [CSS](content/css.md)
-- [JavaScript](content/javascript.md)
-- [ReactJS](content/react.md)
-- [Application design](content/application-design.md)
-- [Work methods](content/work-methods.md)
-    - [Agile/Scrum](content/work-methods.md#agile--scrum)
-    - [Remote work](content/work-methods.md#remote-work)
-    - [Time management](content/work-methods.md#time-management)
-- [Presentation](content/presentation.md)
-
 Don't follow this guide blindly. Read the references to learn more about certain rules. Some practices become outdated as the web evolves.
 
 This repository is a continuous work in progress.
+
+## Table of Contents
+
+- [HTML](#html)
+- [CSS](#css)
+- [JavaScript](#javascript)
+    - [ReactJS](#reactjs)
+- [Images](#images)
+- [Performance](#performance)
+- [Accessibility](#accessibility)
+- [Security](#security)
+- [SEO](#seo)
+- [User experience](#user-experience)
+- [Work methods](#work-methods)
+    - [Agile/Scrum](#agile--scrum)
+    - [Remote work](#remote-work)
+- [Public speaking](#public-speaking)
+
+
+
+
+## HTML
+
+- Do not use [protocol-relative URLs](https://www.paulirish.com/2010/the-protocol-relative-url/), e.g. `//example.com`.
+- Add `rel="noopener"` when using `target="_blank"` to [improve performance](https://jakearchibald.com/2016/performance-benefits-of-rel-noopener/) and [prevent security vulnerabilities](https://mathiasbynens.github.io/rel-noopener/).
+- Prefer `defer` over `async` when [loading scripts](http://calendar.perfplanet.com/2016/prefer-defer-over-async/).
+- Provide basic document metadata:
+  - Define a [doctype](https://www.w3.org/QA/Tips/Doctype) at the beginning of a HTML page.
+  - Specify the [document's language](https://www.w3.org/International/questions/qa-html-language-declarations).
+  - Declare an explicit [character encoding](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/meta#attr-charset).
+  - Add [mobile support](https://developer.mozilla.org/en/docs/Mozilla/Mobile/Viewport_meta_tag).
+
+```html
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Page Title</title>
+```
+
+- Place paragraphs in a `<p>` tag. Do not use multiple `<br>` tags.
+- Do not write closing tag comments, e.g. `<!-- end .content -->`.
+- Do not set values for [boolean attributes](https://html.spec.whatwg.org/multipage/infrastructure.html#boolean-attributes), such as `disabled`, `selected` or `checked`.
+
+
+
+
+## CSS
+
+- Consider including [normalize.css](http://necolas.github.io/normalize.css/) before own stylesheets.
+- Don't use [@import](http://www.stevesouders.com/blog/2009/04/09/dont-use-import/).
+- Avoid [shorthand properties](http://csswizardry.com/2016/12/css-shorthand-syntax-considered-an-anti-pattern/).
+- Use `border-box` [box-sizing](https://www.paulirish.com/2012/box-sizing-border-box-ftw/) by default:
+
+```
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+```
+
+- Place [media queries](http://codeguide.co/#css-media-queries) close to their relevant rule sets. Do not bundle them in a separate stylesheet or at the end of the document.
+- Provide a print layout.
+  - Emulate print media in [Chrome](http://stackoverflow.com/a/29962072/1116549).
+
+
+
+
+## JavaScript
+
+- Test your website with JavaScript disabled.
+  - Add `<noscript>` as [fallback](https://webdesign.tutsplus.com/tutorials/quick-tip-dont-forget-the-noscript-element--cms-25498).
+- Organize your files [around features, not roles](https://blog.risingstack.com/node-hero-node-js-project-structure-tutorial/#rule1organizeyourfilesaroundfeaturesnotroles).
+
+### ReactJS
+
+- Don't use `bind` or arrow functions in `render()` to avoid [creating new values]( https://blog.vixlet.com/react-at-light-speed-78cd172a6411#a45a) each render cycle.
+- Consider using [PureComponent over Component](https://60devs.com/pure-component-in-react.html).
+- If an update to the state depends on the current state/props, use `this.setState((prevState, props) => ...)`, as `setState` is [asynchronous](https://facebook.github.io/react/docs/react-component.html#setstate).
+- Use `?react_perf` [URL parameter](https://facebook.github.io/react/docs/optimizing-performance.html#profiling-components-with-the-chrome-performance-tab) to make debugging ReactJS easier.
+- Don't use [array indexes as keys](https://medium.com/@robinpokorny/index-as-a-key-is-an-anti-pattern-e0349aece318).
+- Render [lists](https://mobx.js.org/best/react-performance.html#render-lists-in-dedicated-components) in dedicated components:
+
+Bad:
+```javascript
+class MyComponent extends Component {
+    render() {
+        const {todos, user} = this.props;
+        return (<div>
+            {user.name}
+            {todos.map(todo => <Todo todo={todo} key={todo.id} />)}
+        </div>)
+    }
+}
+```
+
+Good:
+
+```javascript
+class MyComponent extends Component {
+    render() {
+        const {todos, user} = this.props;
+        return (<div>
+            {user.name}
+            <Todos todos={todos} />
+        </div>)
+    }
+}
+
+class TodosView extends Component {
+    render() {
+        const {todos} = this.props;
+        return <ul>
+            {todos.map(todo => <TodoView todo={todo} key={todo.id} />)}
+        </ul>)
+    }
+}
+```
+
+
+
+
+## Images
+
+- Consider using [inline SVG](https://github.com/blog/2112-delivering-octicons-with-svg) instead of [icon fonts](https://css-tricks.com/icon-fonts-vs-svg/).
+
+
+
+
+## Performance
+
+- Enable [gzip compression](https://developers.google.com/speed/docs/insights/EnableCompression) and [test](http://www.whatsmyip.org/http-compression-test/) it.
+- Consider avoiding [web fonts](https://meowni.ca/posts/web-fonts/).
+
+
+
+
+## Accessibility
+
+- The contrast between the background and the foreground should be as high as possible.
+  - Avoid [low-contrast font colors](http://contrastrebellion.com/).
+- When using colors to communicate an information (such as states or graphs), use different styles or add a text/icon to distinguish different states. This is important for both colorblind people and for printing a page in grayscale.
+- Make sure zooming in/out doesn't break the page.
+- Don't use a `tabindex` value [greater than 0](http://webaim.org/techniques/keyboard/tabindex).
+- Be aware of [screen reader conflicts](http://john.foliot.ca/using-accesskeys-is-it-worth-it/) with [accesskeys](http://webaim.org/techniques/keyboard/accesskey), making accesskeys mostly [useless](https://www.thesitewizard.com/webdesign/access-keys-are-useless.shtml) for blind users.
+
+
+
+
+## Security
+
+- Use [HTTPS everywhere](https://https.cio.gov/).
+  - Test your SSL rating on [SSL Labs](https://www.ssllabs.com/ssltest/).
+
+
+
+
+## SEO
+
+- Use [canonical URLs](https://support.google.com/webmasters/answer/139066?hl=en) to prevent search engines from indexing duplicate content.
+
+
+
+
+## User experience
+
+
+- Provide a way to try the app without signing up:
+  - Public demo
+  - Guest account, which can be then easily turned into a full account
+- Show a different view when there is no data, e.g. a tutorial link or description.
+
+
+
+
+## Work methods
+
+### Agile / Scrum
+
+- Start sprints on Wednesday to reduce the absence in sprint meetings due to days off and remote working.
+
+### Remote work
+
+- Go [remote-first](https://zachholman.com/posts/remote-first/), meaning you build your development team around a workflow that embraces the concepts of remote work, whether or not your employees are remote.
+- Always use a camera in addition to audio during remote meetings.
+
+
+
+
+## Public speaking
+
+- Use a light color theme on a beamer to improve readability (slides, console, editor/IDE).
