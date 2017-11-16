@@ -201,3 +201,12 @@ class TodosView extends Component {
 ## Public speaking
 
 - Use a light color theme on a beamer to improve readability (slides, console, editor/IDE).
+
+
+
+
+## License
+
+This work is dedicated to the [public domain](https://creativecommons.org/publicdomain/zero/1.0/).
+
+[![Public Domain](https://licensebuttons.net/p/mark/1.0/88x31.png)](https://creativecommons.org/publicdomain/zero/1.0/)
