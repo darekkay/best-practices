@@ -8,6 +8,7 @@ This repository is a continuous work in progress.
 
 ## Table of Contents
 
+- [General](#general)
 - [HTML](#html)
 - [CSS](#css)
 - [JavaScript](#javascript)
@@ -22,6 +23,13 @@ This repository is a continuous work in progress.
     - [Agile/Scrum](#agile--scrum)
     - [Remote work](#remote-work)
 - [Public speaking](#public-speaking)
+
+
+## General
+
+- Provide 404 and 50x error pages.
+- Offer an RSS feed for any kind of articles. Include the full content instead of snippets.
+- Test your website with adblockers enabled.
 
 
 
@@ -73,6 +81,7 @@ html {
 - Place [media queries](http://codeguide.co/#css-media-queries) close to their relevant rule sets. Do not bundle them in a separate stylesheet or at the end of the document.
 - Provide a print layout.
   - Emulate print media in [Chrome](http://stackoverflow.com/a/29962072/1116549).
+- Remove [unused CSS](https://developers.google.com/web/updates/2017/04/devtools-release-notes#coverage).
 
 
 
@@ -148,12 +157,13 @@ class TodosView extends Component {
 
 ## Accessibility
 
-- The contrast between the background and the foreground should be as high as possible.
+- The [contrast ratio](http://leaverou.github.io/contrast-ratio/) between the background and the foreground should be as high as possible.
   - Avoid [low-contrast font colors](http://contrastrebellion.com/).
 - When using colors to communicate an information (such as states or graphs), use different styles or add a text/icon to distinguish different states. This is important for both colorblind people and for printing a page in grayscale.
 - Make sure zooming in/out doesn't break the page.
 - Don't use a `tabindex` value [greater than 0](http://webaim.org/techniques/keyboard/tabindex).
 - Be aware of [screen reader conflicts](http://john.foliot.ca/using-accesskeys-is-it-worth-it/) with [accesskeys](http://webaim.org/techniques/keyboard/accesskey), making accesskeys mostly [useless](https://www.thesitewizard.com/webdesign/access-keys-are-useless.shtml) for blind users.
+- Provide an [alt text](https://axesslab.com/alt-texts/) for all images. Use `alt=""` for decorative images.
 
 
 
@@ -162,6 +172,9 @@ class TodosView extends Component {
 
 - Use [HTTPS everywhere](https://https.cio.gov/).
   - Test your SSL rating on [SSL Labs](https://www.ssllabs.com/ssltest/).
+- Scan your website for security issues:
+  - [Mozilla Observatory](https://observatory.mozilla.org/)
+  - [securityheaders.io](https://securityheaders.io/)
 
 
 
@@ -169,6 +182,7 @@ class TodosView extends Component {
 ## SEO
 
 - Use [canonical URLs](https://support.google.com/webmasters/answer/139066?hl=en) to prevent search engines from indexing duplicate content.
+- Provide a [sitemap](https://support.google.com/webmasters/answer/183668?hl=en).
 
 
 
@@ -203,6 +217,11 @@ class TodosView extends Component {
 - Use a light color theme on a beamer to improve readability (slides, console, editor/IDE).
 
 
+
+
+## Related work
+
+- [Front-End-Checklist](https://github.com/thedaviddias/Front-End-Checklist/blob/master/README.md)
 
 
 ## License
