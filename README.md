@@ -54,6 +54,15 @@ This repository is a continuous work in progress.
   <title>Page Title</title>
 ```
 
+- Define [favicons](https://github.com/audreyr/favicon-cheat-sheet):
+  - Place a `favicon.ico` in the root document folder, [containing](http://www.imagemagick.org/Usage/thumbnails/#favicon) at least 16x16 and 32x32 icons.
+  - Place a 180x180 `apple-touch-icon.png` in the root document folder for [iOS](https://developer.apple.com/library/content/documentation/AppleApplications/Reference/SafariWebContent/ConfiguringWebApplications/ConfiguringWebApplications.html) devices.
+  - Create a 192x192 icon for [Android](https://developer.chrome.com/multidevice/android/installtohomescreen) devices:
+
+```html
+<link rel="icon" sizes="192x192" href="/favicon-192.png">
+```
+
 - Place paragraphs in a `<p>` tag. Do not use multiple `<br>` tags.
 - Do not write closing tag comments, e.g. `<!-- end .content -->`.
 - Do not set values for [boolean attributes](https://html.spec.whatwg.org/multipage/infrastructure.html#boolean-attributes), such as `disabled`, `selected` or `checked`.
