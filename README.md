@@ -131,16 +131,16 @@ class MyComponent extends Component {
         const {todos, user} = this.props;
         return (<div>
             {user.name}
-            <Todos todos={todos} />
+            <TodoList todos={todos} />
         </div>)
     }
 }
 
-class TodosView extends Component {
+class TodoList extends Component {
     render() {
         const {todos} = this.props;
         return <ul>
-            {todos.map(todo => <TodoView todo={todo} key={todo.id} />)}
+            {todos.map(todo => <Todo todo={todo} key={todo.id} />)}
         </ul>)
     }
 }
