@@ -91,7 +91,7 @@ html {
 - Provide a print layout.
   - Emulate print media in [Chrome](http://stackoverflow.com/a/29962072/1116549).
 - Remove [unused CSS](https://developers.google.com/web/updates/2017/04/devtools-release-notes#coverage).
-
+- Consider a [utility-first](https://adamwathan.me/css-utility-classes-and-separation-of-concerns/) approach.
 
 
 
@@ -224,6 +224,7 @@ class TodoList extends Component {
 
 ## Public speaking
 
+- Plan for the worst-case scenario, e.g. your computer dying.
 - Use a light color theme on a beamer to improve readability (slides, console, editor/IDE).
 
 
