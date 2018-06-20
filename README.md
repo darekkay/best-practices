@@ -160,7 +160,7 @@ class TodoList extends Component {
 
 - Enable [gzip compression](https://developers.google.com/speed/docs/insights/EnableCompression) and [test](http://www.whatsmyip.org/http-compression-test/) it.
 - Consider avoiding [web fonts](https://meowni.ca/posts/web-fonts/).
-
+- Prefer readable code over micro performance optimizations such as [performant CSS selectors](https://csswizardry.com/2011/09/writing-efficient-css-selectors/) or using [a for loop over forEach](https://stackoverflow.com/questions/43031988/javascript-efficiency-for-vs-foreach).
 
 
 
