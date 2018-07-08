@@ -72,7 +72,7 @@ This repository is a continuous work in progress.
 
 ## CSS
 
-- Consider including [normalize.css](http://necolas.github.io/normalize.css/) before own stylesheets.
+- Consider including [normalize.css](http://necolas.github.io/normalize.css/) or [sanitize.css](https://github.com/csstools/sanitize.css) before own stylesheets.
 - Don't use [@import](http://www.stevesouders.com/blog/2009/04/09/dont-use-import/).
 - Avoid [shorthand properties](http://csswizardry.com/2016/12/css-shorthand-syntax-considered-an-anti-pattern/).
 - Use `border-box` [box-sizing](https://www.paulirish.com/2012/box-sizing-border-box-ftw/) by default:
