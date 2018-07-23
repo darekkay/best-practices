@@ -225,7 +225,7 @@ class TodoList extends Component {
 ## Public speaking
 
 - Plan for the worst-case scenario, e.g. your computer dying.
-- Use a light color theme on a beamer to improve readability (slides, console, editor/IDE).
+- Use a bright color theme on a beamer to improve readability (slides, console, editor/IDE).
 - Be prepared to zoom in your presentation
   - `Win` + `+` / `Win` + `-` on Windows
 
