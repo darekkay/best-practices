@@ -30,7 +30,7 @@ This repository is a continuous work in progress.
 - Provide 404 and 50x error pages.
 - Offer an RSS feed for any kind of articles. Include the full content instead of snippets.
 - Test your website with adblockers enabled.
-
+- Monitor your website's availability, e.g. with [Uptime Robot](https://uptimerobot.com).
 
 
 
@@ -181,6 +181,8 @@ class TodoList extends Component {
 
 - Use [HTTPS everywhere](https://https.cio.gov/).
   - Test your SSL rating on [SSL Labs](https://www.ssllabs.com/ssltest/).
+- Define a [Certificate Authority Authorization](https://ma.ttias.be/caa-checking-becomes-mandatory-ssltls-certificates/) (CAA)
+- Define a [referrer policy](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Referrer-Policy)
 - Scan your website for security issues:
   - [Mozilla Observatory](https://observatory.mozilla.org/)
   - [securityheaders.io](https://securityheaders.io/)
