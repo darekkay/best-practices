@@ -19,6 +19,7 @@ This repository is a continuous work in progress.
 - [Security](#security)
 - [SEO](#seo)
 - [User experience](#user-experience)
+- [Writing](#writing)
 - [Work methods](#work-methods)
     - [Agile/Scrum](#agile--scrum)
     - [Remote work](#remote-work)
@@ -200,12 +201,21 @@ class TodoList extends Component {
 
 ## User experience
 
-
 - Provide a way to try the app without signing up:
   - Public demo
   - Guest account, which can be then easily turned into a full account
 - Show a different view when there is no data, e.g. a tutorial link or description.
 - Only [provide choices](https://en.wikipedia.org/wiki/Hick%27s_law) when a good default does not exist.
+
+
+
+
+## Writing
+
+- Use plenty of headings.
+- Keep paragraphs short.
+- Use bulleted lists.
+- Highlight key terms
 
 
 
