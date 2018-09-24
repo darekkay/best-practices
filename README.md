@@ -28,10 +28,12 @@ This repository is a continuous work in progress.
 
 ## General
 
-- Provide 404 and 50x error pages.
-- Offer an RSS feed for any kind of articles. Include the full content instead of snippets.
+- Provide 404 and 50x error pages
+  - Inline all external resources on error pages (e.g. CSS, images)
 - Test your website with adblockers enabled.
 - Monitor your website's availability, e.g. with [Uptime Robot](https://uptimerobot.com).
+- Offer an RSS feed for any kind of articles. Include the full content instead of snippets.
+
 
 
 
@@ -170,10 +172,11 @@ class TodoList extends Component {
 - The [contrast ratio](http://leaverou.github.io/contrast-ratio/) between the background and the foreground should be as high as possible.
   - Avoid [low-contrast font colors](http://contrastrebellion.com/).
 - When using colors to communicate an information (such as states or graphs), use different styles or add a text/icon to distinguish different states. This is important for both colorblind people and for printing a page in grayscale.
-- Make sure zooming in/out doesn't break the page.
-- Don't use a `tabindex` value [greater than 0](http://webaim.org/techniques/keyboard/tabindex).
-- Be aware of [screen reader conflicts](http://john.foliot.ca/using-accesskeys-is-it-worth-it/) with [accesskeys](http://webaim.org/techniques/keyboard/accesskey), making accesskeys mostly [useless](https://www.thesitewizard.com/webdesign/access-keys-are-useless.shtml) for blind users.
 - Provide an [alt text](https://axesslab.com/alt-texts/) for all images. Use `alt=""` for decorative images.
+- The tab order should go from top to bottom, from left to right
+  - Don't use a `tabindex` value [greater than 0](http://webaim.org/techniques/keyboard/tabindex).
+- Be aware of [screen reader conflicts](http://john.foliot.ca/using-accesskeys-is-it-worth-it/) with [accesskeys](http://webaim.org/techniques/keyboard/accesskey), making accesskeys mostly [useless](https://www.thesitewizard.com/webdesign/access-keys-are-useless.shtml) for blind users.
+- Make sure zooming in/out doesn't break the page.
 
 
 
