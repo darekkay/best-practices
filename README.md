@@ -161,6 +161,7 @@ class TodoList extends Component {
 
 ## Performance
 
+- Find performance issues with Google's [PageSpeed Insights](https://developers.google.com/speed/pagespeed/insights/).
 - Enable [gzip compression](https://developers.google.com/speed/docs/insights/EnableCompression) and [test](http://www.whatsmyip.org/http-compression-test/) it.
 - Consider avoiding [web fonts](https://meowni.ca/posts/web-fonts/).
 - Prefer readable code over micro performance optimizations such as [performant CSS selectors](https://csswizardry.com/2011/09/writing-efficient-css-selectors/) or using [a for loop over forEach](https://stackoverflow.com/questions/43031988/javascript-efficiency-for-vs-foreach).
@@ -177,7 +178,7 @@ class TodoList extends Component {
   - Don't use a `tabindex` value [greater than 0](http://webaim.org/techniques/keyboard/tabindex).
 - Be aware of [screen reader conflicts](http://john.foliot.ca/using-accesskeys-is-it-worth-it/) with [accesskeys](http://webaim.org/techniques/keyboard/accesskey), making accesskeys mostly [useless](https://www.thesitewizard.com/webdesign/access-keys-are-useless.shtml) for blind users.
 - Make sure zooming in/out doesn't break the page.
-
+- Avoid using [icons without labels](https://axesslab.com/icons-ruining-interfaces/)
 
 
 
@@ -190,15 +191,18 @@ class TodoList extends Component {
 - Scan your website for security issues:
   - [Mozilla Observatory](https://observatory.mozilla.org/)
   - [securityheaders.io](https://securityheaders.io/)
-
+- Hash user passwords using a [cryptographically strong algorithm](https://www.owasp.org/index.php/Password_Storage_Cheat_Sheet#Leverage_an_adaptive_one-way_function), like Argon2, PBKDF2, Scrypt, or Bcrypt.
+- Enable [Two-Factor Authentication](https://authy.com/what-is-2fa/) (2FA).
 
 
 
 ## SEO
 
+- Verify your site in [Google Search Console](https://www.google.com/webmasters).
 - Use [canonical URLs](https://support.google.com/webmasters/answer/139066?hl=en) to prevent search engines from indexing duplicate content.
 - Provide a [sitemap](https://support.google.com/webmasters/answer/183668?hl=en).
-
+- Keep title 60 characters or less.
+- Keep meta descriptions 160 characters or less.
 
 
 
