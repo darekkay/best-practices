@@ -184,7 +184,7 @@ class TodoList extends Component {
 
 ## Security
 
-- Use [HTTPS everywhere](https://https.cio.gov/).
+- Use [HTTPS everywhere](https://https.cio.gov/). Yes, [your site does need HTTPS](https://doesmysiteneedhttps.com/).
   - Test your SSL rating on [SSL Labs](https://www.ssllabs.com/ssltest/).
 - Define a [Certificate Authority Authorization](https://ma.ttias.be/caa-checking-becomes-mandatory-ssltls-certificates/) (CAA)
 - Define a [referrer policy](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Referrer-Policy)
