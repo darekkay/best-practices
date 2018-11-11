@@ -19,6 +19,7 @@ This repository is a continuous work in progress.
 - [Security](#security)
 - [SEO](#seo)
 - [User experience](#user-experience)
+- [Git](#git)
 - [Writing](#writing)
 - [Work methods](#work-methods)
     - [Agile/Scrum](#agile--scrum)
@@ -215,6 +216,17 @@ class TodoList extends Component {
   - Guest account, which can be then easily turned into a full account
 - Show a different view when there is no data, e.g. a tutorial link or description.
 - Only [provide choices](https://en.wikipedia.org/wiki/Hick%27s_law) when a good default does not exist.
+
+
+
+
+## Git
+
+- [Commit early](https://sethrobertson.github.io/GitBestPractices/) and often. Perfect later.
+- Copy/move a file in a different commit from any changes to it to retain the correct file history.
+- Do not force push public branches which other people are working on.
+- Create a [tag](https://git-scm.com/docs/git-tag) for each release using [semantic versioning](https://semver.org/), e.g. `v1.4.8`.
+  - Create a [release](https://help.github.com/articles/creating-releases/) for each tag on GitHub.
 
 
 
