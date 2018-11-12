@@ -173,12 +173,16 @@ class TodoList extends Component {
 
 ## Accessibility
 
+- Use [semantic HTML](https://developer.mozilla.org/en-US/docs/Glossary/Semantics).
+- Provide an [alt text](https://axesslab.com/alt-texts/) for all images. Use `alt=""` for decorative images.
+- Provide a `label` for all form inputs. The `placeholder` attribute is *not* an alternative.
+- Write [descriptive links](https://accessibility.oregonstate.edu/descriptivelinks).
 - The [contrast ratio](http://leaverou.github.io/contrast-ratio/) between the background and the foreground should be as high as possible.
   - Avoid [low-contrast font colors](http://contrastrebellion.com/).
 - When using colors to communicate an information (such as states or graphs), use different styles or add a text/icon to distinguish different states. This is important for both colorblind people and for printing a page in grayscale.
-- Provide an [alt text](https://axesslab.com/alt-texts/) for all images. Use `alt=""` for decorative images.
 - The tab order should go from top to bottom, from left to right
-  - Don't use a `tabindex` value [greater than 0](http://webaim.org/techniques/keyboard/tabindex).
+  - Do not use a `tabindex` value [greater than 0](http://webaim.org/techniques/keyboard/tabindex).
+  - Do not hide the focus ring without providing an alternative.
 - Be aware of [screen reader conflicts](http://john.foliot.ca/using-accesskeys-is-it-worth-it/) with [accesskeys](http://webaim.org/techniques/keyboard/accesskey), making accesskeys mostly [useless](https://www.thesitewizard.com/webdesign/access-keys-are-useless.shtml) for blind users.
 - Make sure zooming in/out doesn't break the page.
 - Avoid using [icons without labels](https://axesslab.com/icons-ruining-interfaces/)
