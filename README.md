@@ -247,9 +247,14 @@ class TodoList extends Component {
 
 ## Work methods
 
-### Agile / Scrum
+### Project management
 
 - Start sprints on Wednesday to reduce the absence in sprint meetings due to days off and remote working.
+- Use appropriate defect severities. Do not misuse them to express a (customer) prioritization.
+  - Severity 1 (Critical): System failure. No further processing is possible.
+  - Severity 2 (High): Unable to proceed with selected function or dependants.
+  - Severity 3 (Medium): Restricted function capability, however, processing can continue.
+  - Severity 4 (Low): Minor cosmetic deviances.
 
 ### Remote work
 
