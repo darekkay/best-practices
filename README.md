@@ -260,6 +260,7 @@ class TodoList extends Component {
 ### Remote work
 
 - Go [remote-first](https://zachholman.com/posts/remote-first/), meaning you build your development team around a workflow that embraces the concepts of remote work, whether or not your employees are remote.
+- Prefer [asynchronous communication](https://www.upwork.com/blog/2018/02/complete-guide-asynchronous-communication-remote-teams/).
 - Always use a camera in addition to audio during remote meetings.
 
 
