@@ -159,7 +159,7 @@ class TodoList extends Component {
 ## Images
 
 - Consider using [inline SVG](https://github.com/blog/2112-delivering-octicons-with-svg) instead of [icon fonts](https://css-tricks.com/icon-fonts-vs-svg/).
-
+- Use WEBP images with a [fallback](https://bitsofco.de/why-and-how-to-use-webp-images-today/) for older browsers.
 
 
 
