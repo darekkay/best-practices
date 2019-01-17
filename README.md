@@ -236,6 +236,15 @@ class TodoList extends Component {
 
 
 
+## Code collaboration
+
+- Include guidelines for contributors in [CONTRIBUTING.MD](https://help.github.com/articles/setting-guidelines-for-repository-contributors/).
+- Use [npm scripts](https://docs.npmjs.com/misc/scripts) so no further build tools have to be installed or used.
+- Consider recording a screencast or a [console demo](https://asciinema.org/) to demonstrate the setup and usage.
+
+
+
+
 ## Writing
 
 - Use plenty of headings.
