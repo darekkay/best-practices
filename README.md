@@ -13,6 +13,7 @@ This repository is a continuous work in progress.
 - [CSS](#css)
 - [JavaScript](#javascript)
     - [ReactJS](#reactjs)
+    - [Redux](#redux)
 - [Images](#images)
 - [Performance](#performance)
 - [Accessibility](#accessibility)
@@ -108,13 +109,17 @@ html {
 
 ### ReactJS
 
-- Don't use `bind` or arrow functions in `render()` to avoid [creating new values]( https://blog.vixlet.com/react-at-light-speed-78cd172a6411#a45a) each render cycle.
 - Consider using [PureComponent over Component](https://60devs.com/pure-component-in-react.html).
   - For functional components, [React.memo](https://reactjs.org/docs/react-api.html#reactmemo) can be used since React 16.6.0.
+  - Use this method sparingly for components whose rendering time could be neglected.
+- Don't use `bind` or arrow functions in `render()` to avoid [creating new values]( https://blog.vixlet.com/react-at-light-speed-78cd172a6411#a45a) each render cycle.
+  - For functional components, use [useCallback](https://reactjs.org/docs/hooks-reference.html#usecallback) to memoize the callback.
+  - For class components, define the callback outside of the `render()` method.
+- As of React 16, functional components are [slightly more performant](https://github.com/reactjs/reactjs.org/issues/639) than class components.
+- Use code splitting to lazy load components that are not instantly needed with [React.Lazy](https://reactjs.org/docs/code-splitting.html#reactlazy) and `React.Suspense`.
 - Use [React.StrictMode](https://kentcdodds.com/blog/react-strict-mode).
 - If an update to the state depends on the current state/props, use `this.setState((prevState, props) => ...)`, as `setState` is [asynchronous](https://facebook.github.io/react/docs/react-component.html#setstate).
 - Don't use [array indexes as keys](https://medium.com/@robinpokorny/index-as-a-key-is-an-anti-pattern-e0349aece318).
-- As of React 16, functional components are [slightly more performant](https://github.com/reactjs/reactjs.org/issues/639) than class components.
 - Render [lists](https://mobx.js.org/best/react-performance.html#render-lists-in-dedicated-components) in dedicated components:
 
 Bad:
@@ -153,6 +158,9 @@ class TodoList extends Component {
 }
 ```
 
+### Redux
+
+- Prefer [normalized](https://redux.js.org/recipes/structuring-reducers/normalizing-state-shape) state.
 
 
 
