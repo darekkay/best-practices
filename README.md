@@ -21,9 +21,10 @@ This repository is a continuous work in progress.
 - [SEO](#seo)
 - [User experience](#user-experience)
 - [Git](#git)
+- [Code collaboration](#code-collaboration)
 - [Writing](#writing)
 - [Work methods](#work-methods)
-    - [Agile/Scrum](#agile--scrum)
+    - [Project Management](#project-management)
     - [Remote work](#remote-work)
 - [Public speaking](#public-speaking)
 
