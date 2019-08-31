@@ -15,7 +15,9 @@ This repository is a continuous work in progress.
     - [ReactJS](#reactjs)
     - [Redux](#redux)
 - [Images](#images)
+- [Code quality](#code-quality)
 - [Performance](#performance)
+- [Design](#design)
 - [Accessibility](#accessibility)
 - [Security](#security)
 - [SEO](#seo)
@@ -172,12 +174,25 @@ class TodoList extends Component {
 
 
 
+## Code quality
+
+- Enforce a zero-warnings policy.
+  - Avoid handling code isses as warnings. Set linter rules to either "off" or "error".
+
+
+
 ## Performance
 
 - Find performance issues with Google's [PageSpeed Insights](https://developers.google.com/speed/pagespeed/insights/).
 - Enable [gzip compression](https://developers.google.com/speed/docs/insights/EnableCompression) and [test](http://www.whatsmyip.org/http-compression-test/) it.
 - Consider avoiding [web fonts](https://meowni.ca/posts/web-fonts/).
 - Prefer readable code over micro performance optimizations such as [performant CSS selectors](https://csswizardry.com/2011/09/writing-efficient-css-selectors/) or using [a for loop over forEach](https://stackoverflow.com/questions/43031988/javascript-efficiency-for-vs-foreach).
+
+
+
+## Design
+
+- Ensure a [thumb-friendly](https://www.smashingmagazine.com/2016/09/the-thumb-zone-designing-for-mobile-users/) navigational design.
 
 
 
