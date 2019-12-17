@@ -81,7 +81,7 @@ This repository is a continuous work in progress.
 ## CSS
 
 - Consider including [normalize.css](http://necolas.github.io/normalize.css/) or [sanitize.css](https://github.com/csstools/sanitize.css) before own stylesheets.
-- Don't use [@import](http://www.stevesouders.com/blog/2009/04/09/dont-use-import/).
+- Don't use [\@import](http://www.stevesouders.com/blog/2009/04/09/dont-use-import/).
 - Avoid [shorthand properties](http://csswizardry.com/2016/12/css-shorthand-syntax-considered-an-anti-pattern/).
 - Use `border-box` [box-sizing](https://www.paulirish.com/2012/box-sizing-border-box-ftw/) by default:
 
@@ -218,8 +218,9 @@ class TodoList extends Component {
 
 - Use [HTTPS everywhere](https://https.cio.gov/). Yes, [your site does need HTTPS](https://doesmysiteneedhttps.com/).
   - Test your SSL rating on [SSL Labs](https://www.ssllabs.com/ssltest/).
-- Define a [Certificate Authority Authorization](https://ma.ttias.be/caa-checking-becomes-mandatory-ssltls-certificates/) (CAA)
-- Define a [referrer policy](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Referrer-Policy)
+- Define a [Certificate Authority Authorization](https://ma.ttias.be/caa-checking-becomes-mandatory-ssltls-certificates/) (CAA).
+- Define a [Referrer Policy](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Referrer-Policy).
+- Define a [Content Security Policy](https://content-security-policy.com/).
 - Scan your website for security issues:
   - [Mozilla Observatory](https://observatory.mozilla.org/)
   - [securityheaders.io](https://securityheaders.io/)
