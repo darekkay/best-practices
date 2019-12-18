@@ -234,6 +234,7 @@ class TodoList extends Component {
 - Verify your site in [Google Search Console](https://www.google.com/webmasters).
 - Use [canonical URLs](https://support.google.com/webmasters/answer/139066?hl=en) to prevent search engines from indexing duplicate content.
 - Provide a [sitemap](https://support.google.com/webmasters/answer/183668?hl=en).
+- Provide a [robots.txt](https://www.robotstxt.org/) file.
 - Keep title 60 characters or less.
 - Keep meta descriptions 160 characters or less.
 
