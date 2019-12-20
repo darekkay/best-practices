@@ -24,6 +24,7 @@ This repository is a continuous work in progress.
 - [User experience](#user-experience)
 - [Git](#git)
 - [Code collaboration](#code-collaboration)
+- [Marketing](#marketing)
 - [Writing](#writing)
 - [Work methods](#work-methods)
     - [Project Management](#project-management)
@@ -248,6 +249,7 @@ class TodoList extends Component {
 - Show a different view when there is no data, e.g. a tutorial link or description.
 - Only [provide choices](https://en.wikipedia.org/wiki/Hick%27s_law) when a good default does not exist.
   - Options can be [costlier](http://neugierig.org/software/blog/2018/07/options.html) than features.
+- Include something funny/goofy.
 
 
 
@@ -268,6 +270,13 @@ class TodoList extends Component {
 - Include guidelines for contributors in [CONTRIBUTING.MD](https://help.github.com/articles/setting-guidelines-for-repository-contributors/).
 - Use [npm scripts](https://docs.npmjs.com/misc/scripts) so no further build tools have to be installed or used.
 - Consider recording a screencast or a [console demo](https://asciinema.org/) to demonstrate the setup and usage.
+
+
+
+
+## Marketing
+
+- Summarize your core idea in a single sentence (elevator pitch).
 
 
 
@@ -308,6 +317,7 @@ class TodoList extends Component {
 - Use a bright color theme on a beamer to improve readability (slides, console, editor/IDE).
 - Be prepared to zoom in your presentation
   - `Win` + `+` / `Win` + `-` on Windows
+
 
 
 
