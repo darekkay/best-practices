@@ -194,7 +194,8 @@ class TodoList extends Component {
 ## Design
 
 - Ensure a [thumb-friendly](https://www.smashingmagazine.com/2016/09/the-thumb-zone-designing-for-mobile-users/) navigational design.
-
+- Remove unnecessary borders from design elements.
+  - Consider replacing borders with box shadows.
 
 
 ## Accessibility
@@ -249,8 +250,8 @@ class TodoList extends Component {
 - Show a different view when there is no data, e.g. a tutorial link or description.
 - Only [provide choices](https://en.wikipedia.org/wiki/Hick%27s_law) when a good default does not exist.
   - Options can be [costlier](http://neugierig.org/software/blog/2018/07/options.html) than features.
+- Provide smart defaults based on frequently chosen input.
 - Include something funny/goofy.
-
 
 
 
@@ -324,7 +325,7 @@ class TodoList extends Component {
 ## Related work
 
 - [Front-End-Checklist](https://github.com/thedaviddias/Front-End-Checklist/blob/master/README.md)
-
+- [UI/UX Best Practices](https://www.nickkolenda.com/user-experience/)
 
 ## License
 
