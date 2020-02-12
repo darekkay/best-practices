@@ -75,7 +75,7 @@ This repository is a continuous work in progress.
 - Place paragraphs in a `<p>` tag. Do not use multiple `<br>` tags.
 - Do not write closing tag comments, e.g. `<!-- end .content -->`.
 - Do not set values for [boolean attributes](https://html.spec.whatwg.org/multipage/infrastructure.html#boolean-attributes), such as `disabled`, `selected` or `checked`.
-
+- Provide `type` and [autocomplete](https://developer.mozilla.org/en-US/docs/Web/HTML/Attributes/autocomplete) values to [input](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/Input) fields if applicable.
 
 
 
