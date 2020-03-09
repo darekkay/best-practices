@@ -20,6 +20,7 @@ This repository is a continuous work in progress.
 - [Design](#design)
 - [Accessibility](#accessibility)
 - [Security](#security)
+- [Privacy](#privacy)
 - [SEO](#seo)
 - [User experience](#user-experience)
 - [Git](#git)
@@ -228,6 +229,13 @@ class TodoList extends Component {
   - [securityheaders.io](https://securityheaders.io/)
 - Hash user passwords using a [cryptographically strong algorithm](https://www.owasp.org/index.php/Password_Storage_Cheat_Sheet#Leverage_an_adaptive_one-way_function), like Argon2, PBKDF2, Scrypt, or Bcrypt.
 - Enable [Two-Factor Authentication](https://authy.com/what-is-2fa/) (2FA).
+
+
+
+## Privacy
+
+- Include a privacy notice.
+- Collect only the bare minimum amount of data needed for its purpose.
 
 
 
