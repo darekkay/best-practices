@@ -116,7 +116,7 @@ html {
 
 - Consider using [PureComponent over Component](https://60devs.com/pure-component-in-react.html).
   - For functional components, [React.memo](https://reactjs.org/docs/react-api.html#reactmemo) can be used since React 16.6.0.
-  - Use this method sparingly for components whose rendering time could be neglected.
+  - Use this method [sparingly](https://dmitripavlutin.com/use-react-memo-wisely/) for components whose rendering time could be neglected.
 - Don't use `bind` or arrow functions in `render()` to avoid [creating new values]( https://blog.vixlet.com/react-at-light-speed-78cd172a6411#a45a) each render cycle.
   - For functional components, use [useCallback](https://reactjs.org/docs/hooks-reference.html#usecallback) to memoize the callback.
   - For class components, define the callback outside of the `render()` method.
