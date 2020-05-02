@@ -66,6 +66,7 @@ This repository is a continuous work in progress.
 
 - Define [favicons](https://github.com/audreyr/favicon-cheat-sheet):
   - Place a `favicon.ico` in the root document folder, [containing](http://www.imagemagick.org/Usage/thumbnails/#favicon) at least 16x16 and 32x32 icons.
+  - Consider using [SVG favicons](https://caniuse.com/#feat=link-icon-svg)
   - Place a 180x180 `apple-touch-icon.png` in the root document folder for [iOS](https://developer.apple.com/library/content/documentation/AppleApplications/Reference/SafariWebContent/ConfiguringWebApplications/ConfiguringWebApplications.html) devices.
   - Create a 192x192 icon for [Android](https://developer.chrome.com/multidevice/android/installtohomescreen) devices:
 
@@ -102,7 +103,7 @@ html {
   - Emulate print media in [Chrome](http://stackoverflow.com/a/29962072/1116549).
 - Remove [unused CSS](https://developers.google.com/web/updates/2017/04/devtools-release-notes#coverage).
 - Consider a [utility-first](https://adamwathan.me/css-utility-classes-and-separation-of-concerns/) approach.
-
+- Use [CSS containment](https://blogs.igalia.com/mrego/2019/01/11/an-introduction-to-css-containment/) when appropriate.
 
 
 ## JavaScript
@@ -112,56 +113,25 @@ html {
 - Organize your files [around features, not roles](https://blog.risingstack.com/node-hero-node-js-project-structure-tutorial/#rule1organizeyourfilesaroundfeaturesnotroles).
 - Use [Subresource Integrity](https://developer.mozilla.org/en-US/docs/Web/Security/Subresource_Integrity) for all external scripts.
 
+
 ### ReactJS
 
 - Consider using [PureComponent over Component](https://60devs.com/pure-component-in-react.html).
   - For functional components, [React.memo](https://reactjs.org/docs/react-api.html#reactmemo) can be used since React 16.6.0.
   - Use this method [sparingly](https://dmitripavlutin.com/use-react-memo-wisely/) for components whose rendering time could be neglected.
-- Don't use `bind` or arrow functions in `render()` to avoid [creating new values]( https://blog.vixlet.com/react-at-light-speed-78cd172a6411#a45a) each render cycle.
+- Don't [overuse](https://kentcdodds.com/blog/usememo-and-usecallback) [useCallback](https://dmitripavlutin.com/dont-overuse-react-usecallback/).
+- Pay attention to using `bind` or arrow functions in `render()` to avoid [creating new values]( https://blog.vixlet.com/react-at-light-speed-78cd172a6411#a45a) each render cycle.
   - For functional components, use [useCallback](https://reactjs.org/docs/hooks-reference.html#usecallback) to memoize the callback.
   - For class components, define the callback outside of the `render()` method.
 - As of React 16, functional components are [slightly more performant](https://github.com/reactjs/reactjs.org/issues/639) than class components.
 - Use code splitting to lazy load components that are not instantly needed with [React.Lazy](https://reactjs.org/docs/code-splitting.html#reactlazy) and `React.Suspense`.
 - Use [React.StrictMode](https://kentcdodds.com/blog/react-strict-mode).
+  - Be aware that StrictMode components may [render twice](https://mariosfakiolas.com/blog/my-react-components-render-twice-and-drive-me-crazy/) in development mode.
+- Never [mutate props](https://reactjs.org/docs/components-and-props.html#props-are-read-only).
 - If an update to the state depends on the current state/props, use `this.setState((prevState, props) => ...)`, as `setState` is [asynchronous](https://facebook.github.io/react/docs/react-component.html#setstate).
 - Don't use [array indexes as keys](https://medium.com/@robinpokorny/index-as-a-key-is-an-anti-pattern-e0349aece318).
-- Render [lists](https://mobx.js.org/best/react-performance.html#render-lists-in-dedicated-components) in dedicated components:
+- Render [lists](https://mobx.js.org/best/react-performance.html#render-lists-in-dedicated-components) in dedicated components.
 
-Bad:
-```javascript
-class MyComponent extends Component {
-    render() {
-        const {todos, user} = this.props;
-        return (<div>
-            {user.name}
-            {todos.map(todo => <Todo todo={todo} key={todo.id} />)}
-        </div>)
-    }
-}
-```
-
-Good:
-
-```javascript
-class MyComponent extends Component {
-    render() {
-        const {todos, user} = this.props;
-        return (<div>
-            {user.name}
-            <TodoList todos={todos} />
-        </div>)
-    }
-}
-
-class TodoList extends Component {
-    render() {
-        const {todos} = this.props;
-        return <ul>
-            {todos.map(todo => <Todo todo={todo} key={todo.id} />)}
-        </ul>)
-    }
-}
-```
 
 ### Redux
 
@@ -173,13 +143,15 @@ class TodoList extends Component {
 
 - Consider using [inline SVG](https://github.com/blog/2112-delivering-octicons-with-svg) instead of [icon fonts](https://css-tricks.com/icon-fonts-vs-svg/).
 - Use WEBP images with a [fallback](https://bitsofco.de/why-and-how-to-use-webp-images-today/) for older browsers.
-
+- Use responsive images, especially for [Retina displays](https://developer.mozilla.org/en-US/docs/Learn/HTML/Multimedia_and_embedding/Responsive_images#Resolution_switching_Same_size_different_resolutions).
 
 
 ## Code quality
 
 - Enforce a zero-warnings policy.
   - Avoid handling code isses as warnings. Set linter rules to either "off" or "error".
+- Avoid [hasty abstractions](https://kentcdodds.com/blog/aha-programming)
+  - Prefer duplication over the [wrong abstraction](https://www.sandimetz.com/blog/2016/1/20/the-wrong-abstraction)
 
 
 
@@ -188,8 +160,9 @@ class TodoList extends Component {
 - Find performance issues with Google's [PageSpeed Insights](https://developers.google.com/speed/pagespeed/insights/).
 - Enable [gzip compression](https://developers.google.com/speed/docs/insights/EnableCompression) and [test](http://www.whatsmyip.org/http-compression-test/) it.
 - Consider avoiding [web fonts](https://meowni.ca/posts/web-fonts/).
+  - If you do, notice the [performance best practices](https://csswizardry.com/2020/05/the-fastest-google-fonts/).
 - Prefer readable code over micro performance optimizations such as [performant CSS selectors](https://csswizardry.com/2011/09/writing-efficient-css-selectors/) or using [a for loop over forEach](https://stackoverflow.com/questions/43031988/javascript-efficiency-for-vs-foreach).
-
+- Serve [videos instead of GIFs](https://www.dannyguo.com/blog/serve-videos-instead-of-gifs/).
 
 
 ## Design
@@ -235,6 +208,8 @@ class TodoList extends Component {
 ## Privacy
 
 - Include a privacy notice.
+- Comply with the EU Cookie Law.
+  - Check the cookies for a domain with [Cookie Metrix](https://www.cookiemetrix.com/).
 - Collect only the bare minimum amount of data needed for its purpose.
 
 
@@ -260,7 +235,12 @@ class TodoList extends Component {
   - Options can be [costlier](http://neugierig.org/software/blog/2018/07/options.html) than features.
 - Provide smart defaults based on frequently chosen input.
 - Include something funny/goofy.
-
+- Hide easter-eggs.
+  - Send [custom HTTP headers](https://frenxi.com/http-headers-you-dont-expect/).
+- Provide a search feature, e.g. using [OpenSearch](https://developer.mozilla.org/en-US/docs/Web/OpenSearch).
+- Ensure a good [visual stability](https://web.dev/cls/), i.e., elements on the page should not shift in ways that users don't expect.
+- Know when (not) to [split a form field into multiple inputs](https://adamsilver.io/articles/form-design-multiple-inputs-versus-one-input/).
+- Don't set the language of your website [based on user location](https://dev.to/bitdweller/stop-setting-the-language-of-your-website-based-on-my-location-31h0).
 
 
 ## Git
@@ -277,6 +257,7 @@ class TodoList extends Component {
 ## Code collaboration
 
 - Include guidelines for contributors in [CONTRIBUTING.MD](https://help.github.com/articles/setting-guidelines-for-repository-contributors/).
+  - Include a [humans.txt](http://humanstxt.org/) file to acknowledge project contributors.
 - Use [npm scripts](https://docs.npmjs.com/misc/scripts) so no further build tools have to be installed or used.
 - Consider recording a screencast or a [console demo](https://asciinema.org/) to demonstrate the setup and usage.
 
@@ -326,8 +307,8 @@ class TodoList extends Component {
 - Use a bright color theme on a beamer to improve readability (slides, console, editor/IDE).
 - Be prepared to zoom in your presentation
   - `Win` + `+` / `Win` + `-` on Windows
-
-
+- Prepare good [verbal transitions](https://medium.com/@saronyitbarek/transitions-the-easiest-way-to-improve-your-tech-talk-ebe4d40a3257) between slides.
+  - Keep the things you say and the things you show in sync.
 
 
 ## Related work
