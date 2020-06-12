@@ -30,6 +30,7 @@ This repository is a continuous work in progress.
 - [Work methods](#work-methods)
     - [Project Management](#project-management)
     - [Remote work](#remote-work)
+- [Communication](#communication)
 - [Public speaking](#public-speaking)
 
 
@@ -297,6 +298,15 @@ html {
 - Go [remote-first](https://zachholman.com/posts/remote-first/), meaning you build your development team around a workflow that embraces the concepts of remote work, whether or not your employees are remote.
 - Prefer [asynchronous communication](https://www.upwork.com/blog/2018/02/complete-guide-asynchronous-communication-remote-teams/).
 - Always use a camera in addition to audio during remote meetings.
+
+
+
+## Communication
+
+- [No well-actually's](https://www.recurse.com/social-rules#no-well-actuallys): Do not correct someone about something that's not relevant to the conversation or tangential to what they're trying to say.
+- [No feigning surprise](https://www.recurse.com/social-rules#no-feigning-surprise): Do not act surprised when someone doesn't know something.
+- [No backseat driving](https://www.recurse.com/social-rules#no-backseat-driving): Do not lob advice from across the room (or across the online chat) without really joining or engaging in a conversation.
+- Avoid [oppresive language](https://tools.ietf.org/id/draft-knodel-terminology-00.html#rfc.section.2)
 
 
 
