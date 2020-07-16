@@ -109,7 +109,7 @@ html {
 
 ## JavaScript
 
-- Test your website with JavaScript disabled.
+- Test your website with JavaScript disabled, because [not everyone has JavaScript](https://kryogenix.org/code/browser/everyonehasjs.html).
   - Add `<noscript>` as [fallback](https://webdesign.tutsplus.com/tutorials/quick-tip-dont-forget-the-noscript-element--cms-25498).
 - Organize your files [around features, not roles](https://blog.risingstack.com/node-hero-node-js-project-structure-tutorial/#rule1organizeyourfilesaroundfeaturesnotroles).
 - Use [Subresource Integrity](https://developer.mozilla.org/en-US/docs/Web/Security/Subresource_Integrity) for all external scripts.
