@@ -171,6 +171,8 @@ html {
 - Ensure a [thumb-friendly](https://www.smashingmagazine.com/2016/09/the-thumb-zone-designing-for-mobile-users/) navigational design.
 - Remove unnecessary borders from design elements.
   - Consider replacing borders with box shadows.
+- Avoid [floating labels](https://adamsilver.io/articles/float-labels-are-problematic/)
+- Avoid messages [under fields](https://adrianroselli.com/2017/01/avoid-messages-under-fields.html).
 
 
 ## Accessibility
