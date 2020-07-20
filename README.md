@@ -151,9 +151,9 @@ html {
 
 - Enforce a zero-warnings policy.
   - Avoid handling code isses as warnings. Set linter rules to either "off" or "error".
-- Avoid [hasty abstractions](https://kentcdodds.com/blog/aha-programming)
-  - Prefer duplication over the [wrong abstraction](https://www.sandimetz.com/blog/2016/1/20/the-wrong-abstraction)
-
+- Avoid [hasty abstractions](https://kentcdodds.com/blog/aha-programming).
+  - Prefer duplication over the [wrong abstraction](https://www.sandimetz.com/blog/2016/1/20/the-wrong-abstraction).
+- [Include units](https://explog.in/notes/units.html) in variable names.
 
 
 ## Performance
