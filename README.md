@@ -78,7 +78,7 @@ This repository is a continuous work in progress.
 - Place paragraphs in a `<p>` tag. Do not use multiple `<br>` tags.
 - Do not write closing tag comments, e.g. `<!-- end .content -->`.
 - Do not set values for [boolean attributes](https://html.spec.whatwg.org/multipage/infrastructure.html#boolean-attributes), such as `disabled`, `selected` or `checked`.
-- Provide `type` and [autocomplete](https://developer.mozilla.org/en-US/docs/Web/HTML/Attributes/autocomplete) values to [input](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/Input) fields if applicable.
+- Provide `type`, [inputmode](https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes/inputmode) and [autocomplete](https://developer.mozilla.org/en-US/docs/Web/HTML/Attributes/autocomplete) values to [input](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/Input) fields if applicable. Test possible values [here](https://inputtypes.com/).
 
 
 
@@ -244,6 +244,7 @@ html {
 - Ensure a good [visual stability](https://web.dev/cls/), i.e., elements on the page should not shift in ways that users don't expect.
 - Know when (not) to [split a form field into multiple inputs](https://adamsilver.io/articles/form-design-multiple-inputs-versus-one-input/).
 - Don't set the language of your website [based on user location](https://dev.to/bitdweller/stop-setting-the-language-of-your-website-based-on-my-location-31h0).
+- Test for [unnecessary scrollbars](https://svenkadak.com/blog/scrollbar-blindness).
 
 
 ## Git
