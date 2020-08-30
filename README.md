@@ -190,6 +190,7 @@ html {
 - Be aware of [screen reader conflicts](http://john.foliot.ca/using-accesskeys-is-it-worth-it/) with [accesskeys](http://webaim.org/techniques/keyboard/accesskey), making accesskeys mostly [useless](https://www.thesitewizard.com/webdesign/access-keys-are-useless.shtml) for blind users.
 - Make sure zooming in/out doesn't break the page.
 - Avoid using [icons without labels](https://axesslab.com/icons-ruining-interfaces/)
+- Ensure that interactive controls have at least a 44x44px [target click size](https://adrianroselli.com/2019/06/target-size-and-2-5-5.html).
 
 
 
