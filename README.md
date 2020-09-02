@@ -26,6 +26,7 @@ This repository is a continuous work in progress.
 - [Git](#git)
 - [Code collaboration](#code-collaboration)
 - [Marketing](#marketing)
+- [Business](#business)
 - [Writing](#writing)
 - [Work methods](#work-methods)
     - [Project Management](#project-management)
@@ -272,6 +273,12 @@ html {
 ## Marketing
 
 - Summarize your core idea in a single sentence (elevator pitch).
+
+
+
+## Business
+
+- Consider the [purchasing power parity](https://rusingh.com/micro/notes/2020/09/02/just-five-dollars/) on product/service pricing.
 
 
 
