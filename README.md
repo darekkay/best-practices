@@ -235,7 +235,7 @@ html {
 - Provide a way to try the app without signing up:
   - Public demo
   - Guest account, which can be then easily turned into a full account
-- Show a different view when there is no data, e.g. a tutorial link or description.
+- Show a different view when there is no data, e.g. a tutorial link or description ([examples](https://emptystat.es/)).
 - Only [provide choices](https://en.wikipedia.org/wiki/Hick%27s_law) when a good default does not exist.
   - Options can be [costlier](http://neugierig.org/software/blog/2018/07/options.html) than features.
 - Provide smart defaults based on frequently chosen input.
