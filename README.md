@@ -23,6 +23,7 @@ This repository is a continuous work in progress.
 - [Privacy](#privacy)
 - [SEO](#seo)
 - [User experience](#user-experience)
+- [DevOps](#devops)
 - [Git](#git)
 - [Code collaboration](#code-collaboration)
 - [Marketing](#marketing)
@@ -247,6 +248,15 @@ html {
 - Know when (not) to [split a form field into multiple inputs](https://adamsilver.io/articles/form-design-multiple-inputs-versus-one-input/).
 - Don't set the language of your website [based on user location](https://dev.to/bitdweller/stop-setting-the-language-of-your-website-based-on-my-location-31h0).
 - Test for [unnecessary scrollbars](https://svenkadak.com/blog/scrollbar-blindness).
+
+
+
+
+## DevOps
+
+- Avoid [2:00 and 3:00 am cron jobs](https://www.endpoint.com/blog/2013/04/08/avoid-200-and-300-am-cron-jobs)
+
+
 
 
 ## Git
