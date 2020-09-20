@@ -1,3 +1,10 @@
+### Node.js ###
+
+node_modules
+/.pnp
+.pnp.js
+package-lock.json
+
 ### IDE ###
 
 /.idea/workspace.xml
@@ -12,4 +19,4 @@
 
 ### App ###
 
-/docs/build
+/dist
