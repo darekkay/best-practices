@@ -91,7 +91,7 @@ This repository is a continuous work in progress.
 - Avoid [shorthand properties](http://csswizardry.com/2016/12/css-shorthand-syntax-considered-an-anti-pattern/).
 - Use `border-box` [box-sizing](https://www.paulirish.com/2012/box-sizing-border-box-ftw/) by default:
 
-```
+```css
 html {
   box-sizing: border-box;
 }
