@@ -134,6 +134,8 @@ html {
 - If an update to the state depends on the current state/props, use `this.setState((prevState, props) => ...)`, as `setState` is [asynchronous](https://facebook.github.io/react/docs/react-component.html#setstate).
 - Don't use [array indexes as keys](https://medium.com/@robinpokorny/index-as-a-key-is-an-anti-pattern-e0349aece318).
 - Render [lists](https://mobx.js.org/best/react-performance.html#render-lists-in-dedicated-components) in dedicated components.
+- Rethink your [mental model](https://twitter.com/ryanflorence/status/1125041041063665666) regarding `useEffect`.
+- Use [multiple](https://epicreact.dev/myths-about-useeffect/) `useEffect` calls for independent concerns.
 
 
 ### Redux
