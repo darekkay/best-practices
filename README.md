@@ -38,8 +38,8 @@ This repository is a continuous work in progress.
 
 ## General
 
-- Provide 404 and 50x error pages
-  - Inline all external resources on error pages (e.g. CSS, images)
+- Provide 404 and 50x error pages.
+  - Inline all external resources on error pages (e.g. CSS, images).
 - Test your website with adblockers enabled.
 - Monitor your website's availability, e.g. with [Uptime Robot](https://uptimerobot.com).
 - Offer an RSS feed for any kind of articles. Include the full content instead of snippets.
@@ -69,7 +69,7 @@ This repository is a continuous work in progress.
 
 - Define [favicons](https://github.com/audreyr/favicon-cheat-sheet):
   - Place a `favicon.ico` in the root document folder, [containing](http://www.imagemagick.org/Usage/thumbnails/#favicon) at least 16x16 and 32x32 icons.
-  - Consider using [SVG favicons](https://caniuse.com/#feat=link-icon-svg)
+  - Consider using [SVG favicons](https://caniuse.com/#feat=link-icon-svg).
   - Place a 180x180 `apple-touch-icon.png` in the root document folder for [iOS](https://developer.apple.com/library/content/documentation/AppleApplications/Reference/SafariWebContent/ConfiguringWebApplications/ConfiguringWebApplications.html) devices.
   - Create a 192x192 icon for [Android](https://developer.chrome.com/multidevice/android/installtohomescreen) devices:
 
@@ -89,18 +89,7 @@ This repository is a continuous work in progress.
 - Consider including [normalize.css](http://necolas.github.io/normalize.css/) or [sanitize.css](https://github.com/csstools/sanitize.css) before own stylesheets.
 - Don't use [\@import](http://www.stevesouders.com/blog/2009/04/09/dont-use-import/).
 - Avoid [shorthand properties](http://csswizardry.com/2016/12/css-shorthand-syntax-considered-an-anti-pattern/).
-- Use `border-box` [box-sizing](https://www.paulirish.com/2012/box-sizing-border-box-ftw/) by default:
-
-```css
-html {
-  box-sizing: border-box;
-}
-
-*, *:before, *:after {
-  box-sizing: inherit;
-}
-```
-
+- Use `border-box` [box-sizing](https://www.paulirish.com/2012/box-sizing-border-box-ftw/) by default.
 - Place [media queries](http://codeguide.co/#css-media-queries) close to their relevant rule sets. Do not bundle them in a separate stylesheet or at the end of the document.
 - Provide a print layout.
   - Emulate print media in [Chrome](http://stackoverflow.com/a/29962072/1116549).
@@ -146,7 +135,7 @@ html {
 
 ## Images
 
-- Consider using [inline SVG](https://github.com/blog/2112-delivering-octicons-with-svg) instead of [icon fonts](https://css-tricks.com/icon-fonts-vs-svg/).
+- Consider using [inline SVGs](https://github.com/blog/2112-delivering-octicons-with-svg) instead of [icon fonts](https://css-tricks.com/icon-fonts-vs-svg/).
 - Use WEBP images with a [fallback](https://bitsofco.de/why-and-how-to-use-webp-images-today/) for older browsers.
 - Use responsive images, especially for [Retina displays](https://developer.mozilla.org/en-US/docs/Learn/HTML/Multimedia_and_embedding/Responsive_images#Resolution_switching_Same_size_different_resolutions).
 
@@ -183,7 +172,7 @@ html {
 
 - Use [semantic HTML](https://developer.mozilla.org/en-US/docs/Glossary/Semantics).
 - Provide an [alt text](https://axesslab.com/alt-texts/) for all images. Use `alt=""` for decorative images.
-- Provide a `label` for all form inputs. The `placeholder` attribute is *not* an alternative.
+- Provide a `label` for all form inputs. The `placeholder` attribute is *not* a usable alternative.
 - Write [descriptive links](https://accessibility.oregonstate.edu/descriptivelinks).
 - The [contrast ratio](http://leaverou.github.io/contrast-ratio/) between the background and the foreground should be as high as possible.
   - Avoid [low-contrast font colors](http://contrastrebellion.com/).
