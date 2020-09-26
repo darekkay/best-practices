@@ -224,6 +224,7 @@ This repository is a continuous work in progress.
 
 ## User experience
 
+- [Be consistent](https://inclusivedesignprinciples.org/#be-consistent). Use familiar conventions and apply them consistently.
 - Provide a way to try the app without signing up:
   - Public demo
   - Guest account, which can be then easily turned into a full account
@@ -239,7 +240,7 @@ This repository is a continuous work in progress.
 - Know when (not) to [split a form field into multiple inputs](https://adamsilver.io/articles/form-design-multiple-inputs-versus-one-input/).
 - Don't set the language of your website [based on user location](https://dev.to/bitdweller/stop-setting-the-language-of-your-website-based-on-my-location-31h0).
 - Test for [unnecessary scrollbars](https://svenkadak.com/blog/scrollbar-blindness).
-
+- Tie the [sign up button text](https://www.gkogan.co/blog/stop-asking-me-to-sign-up/) to your product.
 
 
 
