@@ -241,7 +241,7 @@ This repository is a continuous work in progress.
 - Don't set the language of your website [based on user location](https://dev.to/bitdweller/stop-setting-the-language-of-your-website-based-on-my-location-31h0).
 - Test for [unnecessary scrollbars](https://svenkadak.com/blog/scrollbar-blindness).
 - Tie the [sign up button text](https://www.gkogan.co/blog/stop-asking-me-to-sign-up/) to your product.
-
+- When adding links to downloadable files, include an information about the file's size and its format.
 
 
 ## DevOps
