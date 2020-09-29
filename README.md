@@ -25,6 +25,7 @@ This repository is a continuous work in progress.
 - [User experience](#user-experience)
 - [DevOps](#devops)
 - [Git](#git)
+   - [GitHub](#github)
 - [Code collaboration](#code-collaboration)
 - [Marketing](#marketing)
 - [Business](#business)
@@ -96,6 +97,7 @@ This repository is a continuous work in progress.
 - Remove [unused CSS](https://developers.google.com/web/updates/2017/04/devtools-release-notes#coverage).
 - Consider a [utility-first](https://adamwathan.me/css-utility-classes-and-separation-of-concerns/) approach.
 - Use [CSS containment](https://blogs.igalia.com/mrego/2019/01/11/an-introduction-to-css-containment/) when appropriate.
+- Use [relative units](https://www.24a11y.com/2019/pixels-vs-relative-units-in-css-why-its-still-a-big-deal/).
 
 
 ## JavaScript
@@ -258,6 +260,11 @@ This repository is a continuous work in progress.
 - Do not force push public branches which other people are working on.
 - Create a [tag](https://git-scm.com/docs/git-tag) for each release using [semantic versioning](https://semver.org/), e.g. `v1.4.8`.
   - Create a [release](https://help.github.com/articles/creating-releases/) for each tag on GitHub.
+
+
+### GitHub
+
+- Provide a [social media image](https://docs.github.com/en/free-pro-team@latest/github/administering-a-repository/customizing-your-repositorys-social-media-preview).
 
 
 
