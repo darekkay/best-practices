@@ -249,6 +249,7 @@ This repository is a continuous work in progress.
 ## DevOps
 
 - Avoid [2:00 and 3:00 am cron jobs](https://www.endpoint.com/blog/2013/04/08/avoid-200-and-300-am-cron-jobs)
+- Prefer the `~all` [SPF mechanism](https://wordtothewise.com/2014/06/authenticating-spf/) instead of `-all` or `?all`.
 
 
 
