@@ -28,7 +28,7 @@
     "software development",
     "web development"
   ],
-  "license": "MIT",
+  "license": "Public Domain",
   "main": "index.js",
   "private": true,
   "repository": {
