@@ -82,6 +82,7 @@ This repository is a continuous work in progress.
 - Do not write closing tag comments, e.g. `<!-- end .content -->`.
 - Do not set values for [boolean attributes](https://html.spec.whatwg.org/multipage/infrastructure.html#boolean-attributes), such as `disabled`, `selected` or `checked`.
 - Provide `type`, [inputmode](https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes/inputmode) and [autocomplete](https://developer.mozilla.org/en-US/docs/Web/HTML/Attributes/autocomplete) values to [input](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/Input) fields if applicable. Test possible values [here](https://inputtypes.com/).
+- Use `translate="no"` for content that [should not be translated](https://www.w3.org/International/questions/qa-translate-flag).
 
 
 
