@@ -45,10 +45,10 @@
     time-require "^0.1.2"
     valid-url "^1.0.9"
 
-"@darekkay/11ty@1.1.1":
-  version "1.1.1"
-  resolved "https://registry.yarnpkg.com/@darekkay/11ty/-/11ty-1.1.1.tgz#060b3c92ce42e01fa30cc2193f05d36a8e437d21"
-  integrity sha512-/jHf1G101VjYzf0x64DQqE3ud7fSQLYHM6pNLYyaVbicdMsVJzMFNuveVizvHjbQ5M65GmfXznV9gfA7bYzPag==
+"@darekkay/11ty@1.2.1":
+  version "1.2.1"
+  resolved "https://registry.yarnpkg.com/@darekkay/11ty/-/11ty-1.2.1.tgz#be30e680249614462dbb2b6c53c70669f04b69a6"
+  integrity sha512-P+9pxzFLD7pJmZHZREgoC7flh1HcBz11zl5MD3tX1M4LE2EUQBBKOJHNdbEKbqvqZF5CKl6OhltUUFyj/527vQ==
   dependencies:
     "@darekkay/logger" "1.0.2"
 
@@ -1660,6 +1660,11 @@ markdown-it-link-attributes@3.0.0:
   version "3.0.0"
   resolved "https://registry.yarnpkg.com/markdown-it-link-attributes/-/markdown-it-link-attributes-3.0.0.tgz#12d6f403102ac22695ee2617bec109ee79426e45"
   integrity sha512-B34ySxVeo6MuEGSPCWyIYryuXINOvngNZL87Mp7YYfKIf6DcD837+lXA8mo6EBbauKsnGz22ZH0zsbOiQRWTNg==
+
+markdown-it-replace-link@1.1.0:
+  version "1.1.0"
+  resolved "https://registry.yarnpkg.com/markdown-it-replace-link/-/markdown-it-replace-link-1.1.0.tgz#cab2343eb27928db1c836e10cd518aaf60a0bd50"
+  integrity sha512-P+4D/Z16utgQVjMumA5W3lMbxWYk4iwg1Fk59wShFm7MRgzbjJm++tvI18LdYwiG8CKNA1TFWvHcbtehvMuViA==
 
 markdown-it@12.0.2:
   version "12.0.2"
