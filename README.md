@@ -296,10 +296,27 @@ This repository is a continuous work in progress.
 
 ## Writing
 
-- Use plenty of headings.
-- Keep paragraphs short.
-- Use bulleted lists.
-- Highlight key terms
+### Style
+
+- Prefer active over passive voice.
+- [Avoid ambiguous pronouns](https://developers.google.com/tech-writing/one/words#disambiguate_pronouns):
+  - In general, if more than five words separate your noun from your pronoun, consider repeating the noun instead of using the pronoun.
+  - If you introduce a second noun between your noun and your pronoun, reuse your noun instead of using a pronoun.
+  - it, they, them, their, this, that
+- [Pick specific verbs over vague ones](https://developers.google.com/tech-writing/one/clear-sentences#choose_strong_verbs). Reduce the usage of:
+  - be / is / are / am / was / were
+  - occur / happen
+  - there is / there are
+- Keep list items [parallel](https://developers.google.com/tech-writing/one/lists-and-tables).
+
+### Grammar
+
+- `that` vs. `which`:
+  - use `that` for defining (= non-optional) clauses (no comma)
+  - use `which` for non-definint (= optional) clauses (comma)
+- help (to) do:
+  - `to` is optional
+  - no `-ing` on the [infinitive](https://dictionary.cambridge.org/us/grammar/british-grammar/help-somebody-to-do)
 
 
 
