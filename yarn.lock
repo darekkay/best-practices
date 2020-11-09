@@ -45,12 +45,13 @@
     time-require "^0.1.2"
     valid-url "^1.0.9"
 
-"@darekkay/11ty@1.2.1":
-  version "1.2.1"
-  resolved "https://registry.yarnpkg.com/@darekkay/11ty/-/11ty-1.2.1.tgz#be30e680249614462dbb2b6c53c70669f04b69a6"
-  integrity sha512-P+9pxzFLD7pJmZHZREgoC7flh1HcBz11zl5MD3tX1M4LE2EUQBBKOJHNdbEKbqvqZF5CKl6OhltUUFyj/527vQ==
+"@darekkay/11ty@1.2.4":
+  version "1.2.4"
+  resolved "https://registry.yarnpkg.com/@darekkay/11ty/-/11ty-1.2.4.tgz#c5da55488ab5f329834431a01221fee076899690"
+  integrity sha512-NnRhdgdssKXj8ZcUwbmYa5dHLC0+1r9dkfh4rsXaG2TW6SCEFLb235hCqDXdrcJOmhylAR3aWyJQXL5VD8GB8A==
   dependencies:
     "@darekkay/logger" "1.0.2"
+    dayjs "1.9.5"
 
 "@darekkay/logger@1.0.2":
   version "1.0.2"
@@ -691,6 +692,11 @@ date-time@^0.1.1:
   version "0.1.1"
   resolved "https://registry.yarnpkg.com/date-time/-/date-time-0.1.1.tgz#ed2f6d93d9790ce2fd66d5b5ff3edd5bbcbf3b07"
   integrity sha1-7S9tk9l5DOL9ZtW1/z7dW7y/Owc=
+
+dayjs@1.9.5:
+  version "1.9.5"
+  resolved "https://registry.yarnpkg.com/dayjs/-/dayjs-1.9.5.tgz#fd49994ebe71639d2ce9575e97186642dfce9808"
+  integrity sha512-WULIw7UpW/E0y6VywewpbXAMH3d5cZijEhoHLwM+OMVbk/NtchKS/W+57H/0P1rqU7gHrAArjiRLHCUhgMQl6w==
 
 debug@2.6.9, debug@^2.2.0:
   version "2.6.9"

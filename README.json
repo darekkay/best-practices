@@ -3,5 +3,8 @@
   "slug": "best-practices",
   "description": "A guide for building better applications.",
   "layout": "article.njk",
-  "permalink": "index.html"
+  "permalink": "index.html",
+  "plugins": {
+    "lastUpdated": true
+  }
 }

@@ -1,7 +1,9 @@
+const { applySharedConfig } = require("@darekkay/11ty");
 const markdownIt = require("markdown-it");
 const markdown = require("@darekkay/11ty/lib/markdown");
 
 module.exports = function(eleventyConfig) {
+  applySharedConfig(eleventyConfig);
 
   // markdown setup
   const markdownLib = markdownIt({
