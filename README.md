@@ -308,6 +308,7 @@ This repository is a continuous work in progress.
   - occur / happen
   - there is / there are
 - Keep list items [parallel](https://developers.google.com/tech-writing/one/lists-and-tables).
+- Put conditional clauses [before instructions](https://developers.google.com/style/clause-order), not after.
 
 ### Grammar
 
