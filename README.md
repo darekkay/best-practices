@@ -245,13 +245,14 @@ This repository is a continuous work in progress.
 - Test for [unnecessary scrollbars](https://svenkadak.com/blog/scrollbar-blindness).
 - Tie the [sign up button text](https://www.gkogan.co/blog/stop-asking-me-to-sign-up/) to your product.
 - When adding links to downloadable files, include an information about the file's size and its format.
+- Mark [required](https://www.nngroup.com/articles/required-fields/) input fields.
+
 
 
 ## DevOps
 
 - Avoid [2:00 and 3:00 am cron jobs](https://www.endpoint.com/blog/2013/04/08/avoid-200-and-300-am-cron-jobs)
 - Prefer the `~all` [SPF mechanism](https://wordtothewise.com/2014/06/authenticating-spf/) instead of `-all` or `?all`.
-
 
 
 
@@ -280,7 +281,6 @@ This repository is a continuous work in progress.
 
 
 
-
 ## Marketing
 
 - Summarize your core idea in a single sentence (elevator pitch).
@@ -290,7 +290,6 @@ This repository is a continuous work in progress.
 ## Business
 
 - Consider the [purchasing power parity](https://rusingh.com/micro/notes/2020/09/02/just-five-dollars/) on product/service pricing.
-
 
 
 
