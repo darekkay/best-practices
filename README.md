@@ -188,6 +188,7 @@ This repository is a continuous work in progress.
 - Avoid using [icons without labels](https://axesslab.com/icons-ruining-interfaces/)
 - Ensure that interactive controls have at least a 44x44px [target click size](https://adrianroselli.com/2019/06/target-size-and-2-5-5.html).
 
+View my [accessibility notes](https://darekkay.com/accessibility-notes/) for more information.
 
 
 ## Security
@@ -362,6 +363,7 @@ This repository is a continuous work in progress.
 
 ## Related work
 
+- [Accessibility Notes](https://darekkay.com/accessibility-notes/)
 - [Front-End-Checklist](https://github.com/thedaviddias/Front-End-Checklist/blob/master/README.md)
 - [UI/UX Best Practices](https://www.nickkolenda.com/user-experience/)
 
