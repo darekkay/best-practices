@@ -309,6 +309,8 @@ View my [accessibility notes](https://darekkay.com/accessibility-notes/) for mor
   - there is / there are
 - Keep list items [parallel](https://developers.google.com/tech-writing/one/lists-and-tables).
 - Put conditional clauses [before instructions](https://developers.google.com/style/clause-order), not after.
+- Avoid unnecessary words:
+  - really, pretty much, quite a few, obviously, basically, simply, of course, clearly, just, everyone knows, very, a bit, a little, quite, too, though, sort of, kind of, rather
 
 ### Grammar
 
