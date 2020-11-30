@@ -175,7 +175,7 @@ This repository is a continuous work in progress.
 
 - Use [semantic HTML](https://developer.mozilla.org/en-US/docs/Glossary/Semantics).
 - Provide an [alt text](https://axesslab.com/alt-texts/) for all images. Use `alt=""` for decorative images.
-- Provide a `label` for all form inputs. The `placeholder` attribute is *not* a usable alternative.
+- Provide a `label` for all form inputs. The `placeholder` attribute is [not a usable alternative](https://www.htmhell.dev/24-a-placeholder-is-not-a-label/).
 - Write [descriptive links](https://accessibility.oregonstate.edu/descriptivelinks).
 - The [contrast ratio](http://leaverou.github.io/contrast-ratio/) between the background and the foreground should be as high as possible.
   - Avoid [low-contrast font colors](http://contrastrebellion.com/).
