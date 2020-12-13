@@ -123,7 +123,6 @@ This repository is a continuous work in progress.
 - Use [React.StrictMode](https://kentcdodds.com/blog/react-strict-mode).
   - Be aware that StrictMode components may [render twice](https://mariosfakiolas.com/blog/my-react-components-render-twice-and-drive-me-crazy/) in development mode.
 - Never [mutate props](https://reactjs.org/docs/components-and-props.html#props-are-read-only).
-- If an update to the state depends on the current state/props, use `this.setState((prevState, props) => ...)`, as `setState` is [asynchronous](https://facebook.github.io/react/docs/react-component.html#setstate).
 - Don't use [array indexes as keys](https://medium.com/@robinpokorny/index-as-a-key-is-an-anti-pattern-e0349aece318).
 - Render [lists](https://mobx.js.org/best/react-performance.html#render-lists-in-dedicated-components) in dedicated components.
 - Rethink your [mental model](https://twitter.com/ryanflorence/status/1125041041063665666) regarding `useEffect`.
@@ -158,6 +157,7 @@ This repository is a continuous work in progress.
 - Enable [gzip compression](https://developers.google.com/speed/docs/insights/EnableCompression) and [test](http://www.whatsmyip.org/http-compression-test/) it.
 - Consider avoiding [web fonts](https://meowni.ca/posts/web-fonts/).
   - If you do, notice the [performance best practices](https://csswizardry.com/2020/05/the-fastest-google-fonts/).
+  - Use [Google WebFonts helper](https://google-webfonts-helper.herokuapp.com) to create an optimized font subset.
 - Prefer readable code over micro performance optimizations such as [performant CSS selectors](https://csswizardry.com/2011/09/writing-efficient-css-selectors/) or using [a for loop over forEach](https://stackoverflow.com/questions/43031988/javascript-efficiency-for-vs-foreach).
 - Serve [videos instead of GIFs](https://www.dannyguo.com/blog/serve-videos-instead-of-gifs/).
 
