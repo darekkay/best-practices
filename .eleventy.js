@@ -17,6 +17,7 @@ module.exports = function(eleventyConfig) {
 
   // copy assets
   eleventyConfig.addPassthroughCopy({ "node_modules/@darekkay/styles/dist/css/styles.css": "assets/styles.css" });
+  eleventyConfig.addPassthroughCopy({ "node_modules/@darekkay/styles/dist/css/fonts": "assets/fonts" });
 
   return {
     dir: {

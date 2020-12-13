@@ -62,10 +62,10 @@
     log-symbols "4.0.0"
     loglevel "1.6.8"
 
-"@darekkay/styles@1.0.11":
-  version "1.0.11"
-  resolved "https://registry.yarnpkg.com/@darekkay/styles/-/styles-1.0.11.tgz#daba356b88ee6685c57af0e9a5b36415c9970d66"
-  integrity sha512-7mVFOfIBPbf9jfGqOqKBHSGyls7zQEyTsExnhZ2mITDW5OabAgiz06pDalXYCKvN+jjRGKxfg09Tvn+K9CpI+g==
+"@darekkay/styles@2.0.0":
+  version "2.0.0"
+  resolved "https://registry.yarnpkg.com/@darekkay/styles/-/styles-2.0.0.tgz#eedd295c6e5ae53b111cc18e1c2dd8c2ece6f0d7"
+  integrity sha512-RLNbLgEyFexGuc499sCCYeaINwqUjuC9+uFhpUlZjwWxoit5t/+dG8NCehOw6PTBNFocTL1geRF/2ya1QFJPKw==
 
 "@nodelib/fs.scandir@2.1.3":
   version "2.1.3"
