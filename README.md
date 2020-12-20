@@ -247,6 +247,7 @@ View my [accessibility notes](https://darekkay.com/accessibility-notes/) for mor
 - Tie the [sign up button text](https://www.gkogan.co/blog/stop-asking-me-to-sign-up/) to your product.
 - When adding links to downloadable files, include an information about the file's size and its format.
 - Mark [required](https://www.nngroup.com/articles/required-fields/) input fields.
+- Redirect a request to `/.well-known/change-password` to [the change-passwords URL](https://web.dev/change-password-url/).
 
 
 
