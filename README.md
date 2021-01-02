@@ -1,10 +1,12 @@
 # Best Practices and Coding Guidelines
 
+NOTE: This repository is archived. The content is now part of my blog and will be always available under [darekkay.com/best-practices](https://darekkay.com/best-practices/).
+
+---
+
 A guide for building better applications.
 
 Don't follow this guide blindly. Read the references to learn more about certain rules. Some practices become outdated as the web evolves.
-
-This repository is a continuous work in progress.
 
 ## Table of Contents
 
